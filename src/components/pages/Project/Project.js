@@ -15,7 +15,7 @@ export default class ProjectsContainer extends React.Component {
                         header="Visual Maths"
                         description="A small project about giving a better understanding
                         of maths, being more visual to the user."
-                        link="https://finlaycraig2000.github.io/visual-maths/home"
+                        link="https://finlaycraig2000.github.io/visual-maths/"
                     />
                 </div>
             </div>
