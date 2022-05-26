@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Imports */
+
+@import "./css/Button.css";
+
+:root {
+  --font-header-size: 2.5em;
+  --font-sub-header-size: 1.875em;
+  --font-colour: white;
+  --font-title-size: 1em;
+  --font-paragraph-size: 1em;
+  --header-colour: white;
+  --svg-fill-colour: #252525;
+  --svg-hover-colour: #444444;
+  --margin-size: 10px;
+  --a-hover-link-colour: rgb(150, 0, 0);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.svg-fill-colour {
+  fill: var(--svg-fill-colour);
+}
+
+.svg-fill-colour:hover {
+  fill: var(--svg-hover-colour);
+}
+
+/* Global Settings */
+
+::selection {
+  background: rgba(255, 87, 51, 1);
+  color: #3f3844;
+}
+
+p {
+  font-size: var(--font-paragraph-size);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--font-sub-header-size);
+}
+
+h3 {
+  font-size: var(--font-sub-header-size);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&family=Rubik:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* temp global font colour... */
+  color: var(--font-colour);
+}
+
+button {
+  font-family: "GDS Transport",Arial,sans-serif;
 }

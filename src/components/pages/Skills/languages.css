@@ -1,0 +1,39 @@
+.programming-languages-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 15px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.programming-languages-container:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.programming-language-text {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.programming-sub-text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0px;
+}
+
+.programming-sub-text-container span {
+    font-size: calc(var(--font-paragraph-size) - 0.25em);
+}
+
+.programming-bar-span {
+    display: inline-block;
+    background: cornflowerblue;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.programming-bar-span:hover {
+    background: rgb(90, 138, 227);
+}

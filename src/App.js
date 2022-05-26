@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+// import { Switch, Route, useLocation, Redirect, useParams } from 'react-router';
+
+import React from 'react';
+import CubeContainer from './components/cube/Cube-Container.js';
+import HeaderContainer from './components/header/Header-Container.js';
+
+import { WindowResize } from './helpers/WindowResize.js';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default class App extends React.Component {
 
-export default App;
+  render() {
+    return (
+      <div className="App">
+        <WindowResize />
+
+        <HeaderContainer />
+
+        <CubeContainer />
+      </div>
+    );
+  }
+}

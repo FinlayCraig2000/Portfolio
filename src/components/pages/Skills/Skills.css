@@ -1,0 +1,17 @@
+.skills-header {
+    font-size: var(--font-header-size);
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    font-weight: bold;
+    color: var(--header-colour);
+}
+
+.programming-display-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px auto;
+    border: 2px solid var(--background-colour);
+    box-shadow: 5px 5px black;
+    padding: 0.9375em;
+    border-radius: 0.9375em;
+}

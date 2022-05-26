@@ -1,0 +1,29 @@
+.header-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(175, 50, 50, 50%);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 1;
+}
+
+@media only screen and (max-device-width: 769px) {
+    .header-nav-container {
+        height: 65px;
+        width: 75px;
+        left: 0px;
+    }
+    
+    .header-nav-container[data-expanded=true] {
+        height: 100%;
+        width: 100%;
+    }
+
+    .header-nav-container:not([data-expanded=true]) .nav-bar-inner-container {
+        visibility: hidden;
+    }
+}

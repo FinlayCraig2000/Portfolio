@@ -1,0 +1,137 @@
+* { box-sizing: border-box; }
+
+.overflow-container {
+  height: 100%;
+  overflow: scroll;
+}
+
+:root {
+  /* Cube Globals */
+  --cube-global-number: 400px;
+  --cube-perspective: 400px;
+  --cube-h-and-w: var(--cube-global-number);
+  --cube-height: var(--cube-global-number);
+  --cube-width: var(--cube-global-number);
+  --cube-transition: 1s ease-in-out;
+  --cube-positon-calc: -1;
+
+  --cube-front-face-colour: rgb(175, 50, 50);
+  --cube-right-face-colour: rgb(175, 50, 50);
+  --cube-back-face-colour: rgb(175, 50, 50);
+  --cube-left-face-colour: rgb(175, 50, 50);
+  --cube-top-face-colour: rgb(175, 50, 50);
+  --cube-bottom-face-colour: rgb(175, 50, 50);
+
+  /* RGB colours (test) */
+  /* --cube-right-face-colour: rgb(175, 175, 50);
+  --cube-back-face-colour: rgb(50, 175, 50);
+  --cube-left-face-colour: rgb(50, 175, 175);
+  --cube-top-face-colour: rgb(50, 50, 175);
+  --cube-bottom-face-colour: rgb(175, 50, 175); */
+}
+
+body { font-family: sans-serif; }
+
+.cube-container {
+  height: calc(var(--cube-height) * 2);
+  width: calc(var(--cube-width) * 2);
+  perspective: var(--cube-perspective);
+}
+
+.cube {
+  height: calc(var(--cube-height) * 2);
+  width: calc(var(--cube-width) * 2);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: var(--cube-transition);
+}
+
+.cube.show-front  { transform: translateZ(calc(var(--cube-height) * var(--cube-positon-calc))) rotateY(   0deg); }
+.cube.show-right  { transform: translateZ(calc(var(--cube-height) * var(--cube-positon-calc))) rotateY( -90deg); }
+.cube.show-back   { transform: translateZ(calc(var(--cube-height) * var(--cube-positon-calc))) rotateY(-180deg); }
+.cube.show-left   { transform: translateZ(calc(var(--cube-height) * var(--cube-positon-calc))) rotateY(  90deg); }
+.cube.show-top    { transform: translateZ(calc(var(--cube-height) * var(--cube-positon-calc))) rotateX( -90deg); }
+.cube.show-bottom { transform: translateZ(calc(var(--cube-height) * var(--cube-positon-calc))) rotateX(  90deg); }
+
+.cube__face {
+  position: absolute;
+  height: calc(var(--cube-height) * 2);
+  width: calc(var(--cube-width) * 2);
+  text-align: center;
+  border-radius: 25px;
+}
+
+.cube__face--front  { background: var(--cube-front-face-colour) }
+.cube__face--right  { background: var(--cube-right-face-colour) }
+.cube__face--back   { background: var(--cube-back-face-colour) }
+.cube__face--left   { background: var(--cube-left-face-colour) }
+.cube__face--top    { background: var(--cube-top-face-colour) }
+.cube__face--bottom { background: var(--cube-bottom-face-colour) }
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(var(--cube-h-and-w)); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(var(--cube-h-and-w)); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(var(--cube-h-and-w)); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(var(--cube-h-and-w)); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(var(--cube-h-and-w)); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(var(--cube-h-and-w)); }
+
+/** 
+  * MEDIA screen sizes
+  *
+  * TODO - Re do, wasn't thinking about this and made it just fit the screen...
+*/
+
+@media only screen and (max-device-width: 2561px) {
+  :root {
+    --cube-global-number: 530px;
+    --cube-perspective: 530px;
+  }
+}
+
+@media only screen and (max-device-width: 1921px) {
+  :root {
+    --cube-global-number: 400px;
+    --cube-perspective: 400px;
+  }
+}
+
+@media only screen and (max-device-width: 1441px) {
+  :root {
+    --cube-global-number: 355px;
+    --cube-perspective: 355px;
+  }
+}
+
+@media only screen and (max-device-width: 1025px) {
+  :root {
+    --cube-global-number: 350px;
+    --cube-perspective: 350px;
+  }
+}
+
+@media only screen and (max-device-width: 426px) {
+  :root {
+    --cube-global-number: 205px;
+    --cube-perspective: 205px;
+  }
+}
+
+@media only screen and (max-device-width: 376px) {
+  :root {
+    --cube-global-number: 185px;
+    --cube-perspective: 185px;
+  }
+}
+
+@media only screen and (max-device-width: 321px) {
+  :root {
+    --cube-h-and-w: calc(var(--cube-height) + var(--cube-width));
+    --cube-height: 400px;
+    --cube-width: 165px;
+    --cube-positon-calc: -2;
+    --cube-perspective: 2000px;
+    --cube-global-number: 155px;
+    --cube-transition: none
+    /* --cube-perspective: 155px; */
+  }
+}

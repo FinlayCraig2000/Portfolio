@@ -1,0 +1,16 @@
+.work-header {
+    font-size: var(--font-header-size);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: var(--header-colour);
+}
+
+.work-boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1em;
+    row-gap: 1em;
+    margin: 0px 15px auto;
+}

@@ -1,0 +1,21 @@
+.cv-header {
+    font-size: var(--font-header-size);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: var(--header-colour);
+}
+
+.cv-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 5px auto;
+    column-gap: 10px;
+}
+
+.cv-image {
+    height: 100%;
+    width: 100%;;
+    border-radius: 10px;
+}

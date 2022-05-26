@@ -1,0 +1,32 @@
+.font-size-container {
+    display: block;
+}
+
+.experiment-settings-container {
+    border-top: rgb(125 0 0) dashed 5px;
+    margin: 1em 1em auto;
+}
+
+.experiment-settings-container p {
+    font-size: 1rem;
+}
+
+.experiment-settings-container h3 {
+    font-size: 1.875em;
+}
+
+.fun-setting-description-container {
+    margin: 0px 10px 10px;
+}
+
+.fun-setting-description-container p {
+    text-align: left;
+}
+
+.fun-setting-description {
+    font-size: 1em;
+}
+
+.fun-setting-description-warning {
+    font-weight: bold;
+}

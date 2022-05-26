@@ -1,0 +1,34 @@
+.settings-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: var(--font-header-size);
+    font-weight: bold;
+    color: var(--header-colour);
+}
+    
+.settings-options-containers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.test-overhidden {
+    overflow-y: hidden;
+    max-height: 4.875em;
+}
+
+.background-colour-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: var(--margin-size);
+    margin-bottom: var(--margin-size);
+}
+
+.temp-container {
+    margin-top: var(--margin-size);
+    margin-bottom: var(--margin-size);
+}
+
+.settings-container {
+    width: 100%;
+}
