@@ -2,7 +2,7 @@
 
 .overflow-container {
   height: 100%;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 :root {
