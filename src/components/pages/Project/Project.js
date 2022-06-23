@@ -19,6 +19,20 @@ export default class ProjectsContainer extends React.Component {
                     />
 
                     <CommonContainer 
+                        header="Retail Spotlight Challenge"
+                        description="A challenge project more information in the README of repository.
+                        Giving understanding of fetching and graph.js library."
+                        link="https://github.com/FinlayCraig2000/retail-spotlight-challenge/"
+                    />
+
+                    <CommonContainer 
+                        header="Calculator"
+                        description="Simple calculator using the react framework. For more information
+                        look in the README of the repository."
+                        link="https://github.com/FinlayCraig2000/calculator/"
+                    />
+
+                    <CommonContainer 
                         header="Medical Prescriptions - AAD"
                         description="For a group project with a team of 6, in which we would create a
                         website which would record what medical prescriptions the user needs when logged in.
