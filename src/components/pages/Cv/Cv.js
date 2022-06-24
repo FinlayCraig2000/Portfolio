@@ -10,11 +10,11 @@ export default class CvContainer extends React.Component {
                 <header className="cv-header">CV Information</header>
                 <p>Below is my CV </p>
                 <div className="cv-image-container">
-                    <a href={process.env.PUBLIC_URL + '/images/CV-Page-One.png'} target="_blank" rel="noreferrer">
+                    <a href={process.env.PUBLIC_URL + '/images/CV-Page-One.jpg'} target="_blank" rel="noreferrer">
                         <img className="cv-image" src={process.env.PUBLIC_URL + '/images/CV-Page-One.png'} alt="CV Page One"></img>
                     </a>
 
-                    <a href={process.env.PUBLIC_URL + '/images/CV-Page-Two.png'} target="_blank" rel="noreferrer">
+                    <a href={process.env.PUBLIC_URL + '/images/CV-Page-Two.jpg'} target="_blank" rel="noreferrer">
                         <img className="cv-image" src={process.env.PUBLIC_URL + '/images/CV-Page-Two.png'} alt="CV Page One"></img>
                     </a>
                 </div>

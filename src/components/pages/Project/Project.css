@@ -1,3 +1,7 @@
+.projects-container {
+    height: 100%;
+}
+
 .projects-header {
     font-size: var(--font-header-size);
     padding-top: 20px;
@@ -13,4 +17,8 @@
     column-gap: 1em;
     row-gap: 1em;
     margin: 0px 15px auto;
+    height: calc(100% - 85px);
+    /* TEMP BELOW - move to better system on focus*/
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
